@@ -1,3 +1,4 @@
+/* REGOLE GENERALI */
 *{
   padding: 0;
   margin: 0;
@@ -7,8 +8,10 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #F9F4EE;
+  color: #556859;
 }
 
+/* TITOLO */
 h1{
   margin-top: 30px;
   text-align: center;
@@ -23,11 +26,13 @@ h1{
   height: 100vh;
 }
 
+/* TESTO PRE-LISTA */
 h2{
   margin-bottom: 30px;
   color: #455A4B;
 }
 
+/* CHECKBOX COLOR */
 #list-items{
   accent-color: #556859;
 }
