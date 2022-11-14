@@ -18,7 +18,6 @@ const listaSpesa = [
 // VARIABILE DEL CONTAINER
 let contenitore = document.querySelector('.container');
 let barraTesto = document.getElementById('aggiungi');
-let add = document.getElementById('btn');
 
 
 // LOOP WHILE 
@@ -28,11 +27,23 @@ while(i < listaSpesa.length){
   
   // AGGIUNGI DIV CON INPUT CHECKBOX PER OGNI ELEMENTO DELLA LISTA
   contenitore.innerHTML+=
-  `<div>
-    <input type="checkbox" name="lista" id="list-items">
+    `<div>
+      <input type="checkbox" name="lista"   id="list-items">
       ${listaSpesa[i]}
-    </input>
-  </div>`
+      </input>
+    </div>`
+    
+    i++;
+  }
   
-  i++;
-}
+// CLICK (BONUS)
+let add = document.getElementById('btn');
+
+add.addEventListener("click", 
+  function(){
+    let inputTesto = document.getElementById('aggiungi');
+    listaSpesa.push(inputTesto.value);
+    
+    console.log(listaSpesa);   
+  }
+);
