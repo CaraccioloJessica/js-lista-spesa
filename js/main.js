@@ -8,17 +8,28 @@ const listaSpesa = [
   'pasta'
 ];
 
-console.log(listaSpesa);
+// console.log(listaSpesa);
 
 // LOOP FOR CON STAMPA SINGOLI ITEMS
 // for (let i = 0; i < listaSpesa.length; i++){
 //   console.log(listaSpesa[i]);
 // }
 
+// VARIABILE DEL CONTAINER
+let contenitore = document.querySelector('.container');
+
 // LOOP WHILE 
 i = 0;
 while(i < listaSpesa.length){
-  console.log(listaSpesa[i]);
+  // console.log(listaSpesa[i]);
+
+  // AGGIUNGI DIV CON INPUT CHECKBOX PER OGNI ELEMENTO DELLA LISTA
+  contenitore.innerHTML+=
+  `<div>
+  <input type="checkbox" name="lista" id="list-items">
+  ${listaSpesa[i]}
+  </input>
+  </div>`
+
   i++;
 }
-
