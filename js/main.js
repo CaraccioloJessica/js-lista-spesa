@@ -43,7 +43,8 @@ add.addEventListener("click",
   function(){
     let inputTesto = document.getElementById('aggiungi');
     listaSpesa.push(inputTesto.value);
-    
+    inputTesto.value = '';
+
     console.log(listaSpesa);   
   }
 );
