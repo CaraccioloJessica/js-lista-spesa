@@ -26,10 +26,10 @@ while(i < listaSpesa.length){
   // AGGIUNGI DIV CON INPUT CHECKBOX PER OGNI ELEMENTO DELLA LISTA
   contenitore.innerHTML+=
     `<div>
-      <input type="checkbox" name="lista"   id="list-items">
+      <input type="checkbox" name="lista" id="list-items">
       ${listaSpesa[i]}
       </input>
-    </div>`
+    </div>`;
     
     i++;
   }
@@ -43,9 +43,18 @@ add.addEventListener("click",
     let inputTesto = document.getElementById('aggiungi');
     // PUSH NUOVO VALORE NELL'ARRAY
     listaSpesa.push(inputTesto.value);
-    // RESET TESTO
-    inputTesto.value = '';
 
-    console.log(listaSpesa);   
+    // CREA L'ELEMENTO CHE DEVE CONTENERE I NUOVI ARRAY
+    let creaDiv = document.createElement("div");
+    creaDiv.innerHTML+=
+    `<input type="checkbox" name="lista" id="list-items">
+      ${inputTesto.value}
+    </input>`;
+
+    // INSERISCI NEL DOM
+    contenitore.appendChild(creaDiv);
+
+    // RESET TESTO
+    inputTesto.value = ''; 
   }
 );
