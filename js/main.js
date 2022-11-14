@@ -41,8 +41,11 @@ let add = document.getElementById('btn');
 
 add.addEventListener("click", 
   function(){
+    // VARIABILE DELL'INPUT TEXT
     let inputTesto = document.getElementById('aggiungi');
+    // PUSH NUOVO VALORE NELL'ARRAY
     listaSpesa.push(inputTesto.value);
+    // RESET TESTO
     inputTesto.value = '';
 
     console.log(listaSpesa);   
