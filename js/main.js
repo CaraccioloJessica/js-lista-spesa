@@ -17,8 +17,6 @@ const listaSpesa = [
 
 // VARIABILE DEL CONTAINER
 let contenitore = document.querySelector('.container');
-let barraTesto = document.getElementById('aggiungi');
-
 
 // LOOP WHILE 
 i = 0;
