@@ -41,4 +41,19 @@ h2{
 #aggiungi{
   margin-bottom: 20px;
   margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #C59AAE;
+}
+
+.container a{
+  text-decoration: none;
+}
+
+#btn{
+  font-size: 0.8rem;
+  background-color: #D1A590;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
