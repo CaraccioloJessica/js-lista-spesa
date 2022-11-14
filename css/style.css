@@ -28,11 +28,17 @@ h1{
 
 /* TESTO PRE-LISTA */
 h2{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #455A4B;
 }
 
 /* CHECKBOX COLOR */
 #list-items{
+  margin-bottom: 10px;
   accent-color: #556859;
+}
+
+#aggiungi{
+  margin-bottom: 20px;
+  margin-right: 10px;
 }
